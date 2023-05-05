@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <style>
+      a:link {
+        color: white; /* set the link color for normal state */
+      }
+      
+      a:visited {
+        color: white; /* set the link color for visited state */
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+              </form>
+            </div>
+          </nav>
+    </header>
+    <main class ="my-5">
+        <div class = "container">
+            <div class="row">
+                <div class="col-md-9"></div>
+                    <img class="fade-in"
+                        src="whr2.webp"
+                        class = "img-fluid"
+                        width="380"
+                        height="550"
+                    />
+                <div class="col-md-8">
+                    <h1 class="mt-5"><i>Project: The World Happiness Report</i></h1>
+                    <p class="mt-4">
+                      The World Happiness Report Project analyzes the happiness scores across the globe, and visualizes the trend
+                      involved throughout the years of 2005 to 2021. The primary goal is to show the overall trend as well as in-depth analysis by 
+                      studying South Korea's scores. Additionally, a regression analysis is performed to see if we can predict a nation's score
+                      with variables given. 
+                      <br>
+                      <br>
+                      The data is collected from The World Happiness Report - a publication of the Sustainable Development Solutions Network,
+                       powered by the Gallup World Poll data. The data for South Koera's case study is collected from OECD Official. 
+                       Both the data has been cleaned and preprocessed prior to the creation of the visualizations.
+                       <br>
+                       <br>
+                       Some research questions for the project are as follows. 
+                       <br>(1) "What are the overall trends in happiness score from 2005-2021?"
+                       <br>(2) "Why is South Korea's happiness score low despite their expotential economic growth?"
+                       <br>(3) "What are some highly correlated variables with the happines score?"
+                      </p>
+                    <button type="button" class="btn btn-primary mt-3" >
+                        <a href="https://worldhappiness.report"> Visit Website </a>
+                    </button>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col">
+                    <div class="bg-secondary text-white my-3 py-3 card">
+                        <div class="card-body text-center">
+                          <body>
+                            <div id="quote"></div>
+                          
+                            <script src="quotes.js"></script>
+                            <script>
+                              const quoteElement = document.getElementById('quote');
+                              const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+                              quoteElement.innerText = randomQuote;
+                            </script>
+                          </body>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-group">
+                    <div class="card">
+                      <img class="fade-in" src="choro.png" alt="Card image cap" height="350px" width="350px">
+                      <div class="card-body">
+                        <h5 class="card-title">Choropleth Map</h5>
+                        <p class="card-text">A Tableau visualization of life ladder score for each country.</p>
+                        <a href="#"><a class="btn btn-primary" href="choropleth_map_page.html" role="button">Read More</a>
+                    </a>
+                  </div>
+                      <div class="card-footer">
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="fade-in" src="korea.png" alt="Card image cap" height="350px" width="350px">
+                      <div class="card-body">
+                        <h5 class="card-title">Case Study: Rich South Korea, Unhappy Koreans </h5>
+                        <p class="card-text">South Korea's global growth from its post-war period was exceptional. Today, 
+                          Korea has high reputation of their culture, economics, and wealth. But why are Koreans unhappy? Let's find out. </p>
+                        <a href="#"><a class="btn btn-primary" href="case_study_page.html" role="button">Read More</a>
+                    </a>
+                  </div>
+                      <div class="card-footer">
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="fade-in" src="regression.png" alt="Card image cap" height="350px" width="350px">
+                      <div class="card-body">
+                        <h5 class="card-title">Regression Analysis</h5>
+                        <p class="card-text">Can we predict a nation's happiness level based on factors given by our data? Let's find out.    
+                        </p>
+                            <a href="#"><a class="btn btn-primary" href="https://nbviewer.org/github/leeanddrew/WorldHappinessReport/blob/main/Regression%20Analysis%20of%20World%20Happiness%20Score_fin.ipynb" role="button">Read More</a>
+                        </a>
+                      </div>
+                      <div class="card-footer">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
+
+</body>
+</html>
