@@ -1,7 +1,7 @@
 # 🌍 World Happiness Score Visualizations
 
 An interactive website and analytical project exploring global happiness trends from 2015–2022 through a combination of data visualization, regression modeling, and case-based analysis.  
-📌 Live demo: [leeanddrew.github.io/world-happiness-visualization]([(https://leeanddrew.github.io/world-happiness-visualization/)])
+📌 Live demo: [leeanddrew.github.io/world-happiness-visualization](https://leeanddrew.github.io/world-happiness-visualization/)
 
 ---
 
